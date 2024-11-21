@@ -26,7 +26,7 @@ void nhap_thi_sinh(ThiSinh *ts, int ma) {
         scanf("%f", &ts->diem[i]);
     }
     ts->tong_diem = ts->diem[0] + ts->diem[1] + ts->diem[2];
-    getchar();  // Lo?i b? k? t? '\n' c?n l?i trong b? ð?m sau khi nh?p ði?m
+    getchar();  
 }
 
 void tim_thu_khoa(ThiSinh ds[], int n) {
@@ -51,7 +51,7 @@ int main() {
 
     printf("Nhap so thi sinh: ");
     scanf("%d", &n);
-    getchar();  // Lo?i b? '\n' c?n l?i trong b? ð?m sau khi nh?p s? lý?ng thí sinh
+    getchar();  
 
     for (int i = 0; i < n; i++) {
         nhap_thi_sinh(&ds[i], i + 1);
